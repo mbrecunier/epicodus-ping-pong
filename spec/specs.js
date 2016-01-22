@@ -15,8 +15,12 @@ describe('pingPong', function() {
     expect(pingPong(15)).to.eql([1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'ping', 'pong', 11, 'ping', 13, 14, 'pingpong'])
   });
 
-  it('will ignore blank entries', function() {
+  it('will return nothing for blank entries', function() {
     expect(pingPong()).to.eql([]);
+  });
+
+  it('will return nothing if userNumber=0', function() {
+    expect(pingPong(0)).to.eql([]);
   });
 
   it('will ignore numbers after a decimal point', function() {
