@@ -24,6 +24,6 @@ describe('pingPong', function() {
   });
 
   it('will count from -1 to the userNumber if userNumber is negative', function() {
-    expect(pingPong(-6)).to.eql([-1, -2, 'ping', -4, 'pong']);
+    expect(pingPong(-6)).to.eql([-1, -2, 'ping', -4, 'pong', 'ping']);
   });
 });
