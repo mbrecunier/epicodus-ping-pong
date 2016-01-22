@@ -9,5 +9,9 @@ describe('pingPong', function() {
 
   it('will replace numbers divisible by 5 with "pong"', function() {
     expect(pingPong(7)).to.eql([1, 2, 'ping', 4, 'pong', 'ping', 7])
-  })
+  });
+
+  it('will replace numbers divisible by both 3 and 5 with "pingpong"', function() {
+    expect(pingPong(15)).to.eql([1, 2, 'ping', 4, 'pong', 'ping', 7, 8, 'ping', 'pong', 11, 'ping', 13, 14, 'pingpong'])
+  });
 });
