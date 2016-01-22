@@ -18,4 +18,8 @@ describe('pingPong', function() {
   it('will ignore blank entries', function() {
     expect(pingPong()).to.eql([]);
   });
+
+  it('will ignore numbers after a decimal point', function() {
+    expect(pingPong(3.9)).to.eql([1, 2, 'ping']);
+  });
 });
