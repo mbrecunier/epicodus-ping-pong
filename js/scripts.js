@@ -6,6 +6,8 @@ var pingPong = function(userNumber) {
   numberArray.forEach(function(number) {
     if (number % 3 === 0) {
       numberArray[number-1] = 'ping';
+    } else if (number % 5 === 0) {
+      numberArray[number-1] = 'pong';
     }
   });
   return numberArray;
