@@ -8,15 +8,37 @@
     <title>Ping Pong</title>
   </head>
   <body>
-    <h1>Ping Pong</h1>
-    <h3></h3>
-    <form id="pingPong">
-      <label for="userNumber">Enter a number:</label>
-      <input type="number" step="any" id="userNumber">
-      <input type="submit">
-    </form>
-    <ul id="result">
-    </ul>
+    <div class="banner">
+      <h1>Ping-Pong</h1>
+    </div>
+
+    <div class="side-bar">
+      <h3>About Ping Pong</h3>
+      <h4>Created by:</h4>
+      <p>Michelle Brecunier</p>
+      <h4>GitHub Username:</h4>
+      <a href="https://github.com/mbrecunier">mbrecunier</a>
+      <h4>Epicodus Code Review:</h4>
+      <a href="https://www.learnhowtoprogram.com/intro-to-programming/behavior-driven-development-with-javascript/javascript-bdd-code-review-fc05d429-5a2c-468c-b602-47edc3f7cc36">Javascript BDD</a>
+    </div>
+
+    <div class="game">
+      <h2>Let's play!</h2>
+      <h4>Rules:</h4>
+      <p>Ping Pong with count up to your number from 1 with the following exceptions:</p>
+      <ol>
+        <li>Numbers divisible by 3 become "ping"</li>
+        <li>Numbers divisible by 5 become "pong"</li>
+        <li>Numbers divisible by 3 and 5 become "pingpong"</li>
+      </ol>
+      <form id="pingPong">
+        <label for="userNumber">Enter your number here:</label>
+        <input type="number" step="any" id="userNumber">
+        <button type="submit">Ping Pong!</button>
+      </form>
+      <ul id="result">
+      </ul>
+    </div>
 
   </body>
 </html>
